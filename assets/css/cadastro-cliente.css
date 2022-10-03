@@ -1,0 +1,61 @@
+.main {
+    background-color: #ececec;
+    margin: auto ;
+    padding: 30px;
+    border: 2px solid #a3a1a1;
+    border-radius: 15px;
+}
+
+.cadastrocliente {
+    height: 100%;
+    width: 100%;  
+    margin: 0;
+}
+
+
+.i-am-centered { 
+    margin: auto;
+}
+
+.control-label {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+input[type=text],
+input[type=tel], 
+input[type=mail],
+.custom select  {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #101010;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    padding: 4px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.cadastrocliente div[class^="col-"] {
+    padding: 5px 20px; /* calcula a distancia entro um inpute e outro e os cantos da tela*/
+}
+
+
+.btn-toolbar .btn {
+    margin: auto;
+    margin-top: 15px;
+    padding:10px 30px;
+    border: 3px solid #101010;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fafafa
+}

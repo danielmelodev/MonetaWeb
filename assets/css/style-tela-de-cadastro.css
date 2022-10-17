@@ -93,7 +93,7 @@ body{
 /*scroll-bar*/
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3d3d3d;
+  background-color: #5e5e5e;
   border-radius: 5px;
   height: 0.8vw;
 }

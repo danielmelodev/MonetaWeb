@@ -97,8 +97,8 @@ span {
 }
 
 #sidebar {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
     min-width: 250px;
     max-width: 250px;
     background: #010101;
@@ -110,8 +110,8 @@ span {
     min-width: 80px;
     max-width: 80px;
     text-align: center;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 #sidebar.active ul li a b{
     display: none;
@@ -301,7 +301,7 @@ a.article:hover {
 /*scroll-bar*/
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3d3d3d;
+    background-color: #5e5e5e;
     border-radius: 5px;
     height: 0.8vw;
 }

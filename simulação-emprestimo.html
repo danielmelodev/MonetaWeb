@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="imagem/png" href="./src/assets/images/favicon.ico" />
+    <link rel="icon" type="imagem/png" href="./assets/images/favicon.png" />
     <title>MonetaWeb | Simulação Empréstimo</title>
 
     <!-- Bootstrap CSS CDN -->
@@ -164,7 +164,7 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-btn">
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
@@ -194,17 +194,17 @@
                 </div>
                 <div class="lineInput">
                     <label>Valor do Empréstimos</label>
-                    <input type="number" name="valor" id="valor" placeholder="Digite o Valor">
+                    <input type="number" name="valor" id="valor" placeholder="0,00">
                 </div>
 
                 <div class="lineInput">
-                    <label>Taxa de Juros</label>
-                    <input type="number" name="taxa" id="taxa" placeholder="Digite o Valor">
+                    <label>Números de parcelas desejadas</label> 
+                    <input type="number" name="nParcelas" id="parcelas" placeholder="0">
                 </div>
 
                 <div class="lineInput">
-                    <label>Números de parcelas desejadas</label>
-                    <input type="number" name="nPrestacao" id="nPrestacao" placeholder="Digite o números de parcelas">
+                    <label>Taxas de Juros</label>
+                    <input type="number" name="taxa" id="taxas" placeholder="0,00%">
                 </div>
 
                 <div class="lineInput">
@@ -212,19 +212,44 @@
                 </div>
 
                 <div class="botoes">
-                    <button id="btn1" class="botao1">Simular</button>
+                    <button onclick="produto.simular()" id="btn1" class="botao1">Simular</button>
                     <button onclick="produto.cancelar()">Cancelar</button>
                 </div>
-                
+                <br>
+                <a class="center"> As parcelas Fixas (Tabela Price) são muito comuns nos empréstimos pessoais e financiamentos de carros.
+                </a>
+                <a class="center">Já as parcelas Decrescentes (Tabela SAC) são mais usadas em financiamentos de imóveis.</a>
+                <br>    
+
+                <!--tabela-->
+                  
+                <div id="listagem" class="content">
+                    <div class="title">
+                    </div>
+                    <table border="1">
+                        <thead class="title">
+                            <th class="center">#</th>
+                            <th class="center">Parcelas</th>
+                            <th class="center">Amortizaçôes</th>
+                            <th class="center">Juros</th>
+                            <th class="center">Saldo Devedor</th>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr class="codigo">
+                                <td class="center">1</td>
+                                <td class="center">122,67</td>
+                                <td class="center">83,67</td>
+                                <td class="center">39,00</td>
+                                <td class="center">916,32</td>
+                            </tr>
+
+                  <!--tabela-->
+
+                <script src="./assets/js/simulacoes-emprestimo.js"></script>
             </div>
-
-
-        
-        
         </div>
     </div>
     <script src="assets/js/script.js"></script>
-    <script src="./script.js"></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->

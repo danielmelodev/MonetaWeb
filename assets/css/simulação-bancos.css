@@ -13,8 +13,11 @@ ul, li{
     margin: 0 auto;
 }
 .link{
-    color: #a1a1a1;
+    color: #4b4b4b;
     text-decoration: underline;
+}
+.link::placeholder{
+    color: #030303;
 }
 .simulacoes img{
     width: 11vw;

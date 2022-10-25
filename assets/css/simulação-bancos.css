@@ -4,6 +4,9 @@ ul, li{
     margin: 0;
     padding: 0;
 }
+.sidebar-header{
+    display: flex;
+}
 .simulacoes{
     text-align: center;
     background-color: #ececec;

@@ -1,3 +1,7 @@
+import {Financiamento} from './financiamento';
+
+
+
 class Produto {
   constructor() {
     this.id = 1;
@@ -65,7 +69,7 @@ class Produto {
       }
     }
   }
-
+  
   preparaEdicao(dados){
     this.edtId = dados.id;
 
@@ -123,5 +127,3 @@ class Produto {
   }
 }
 var produto = new Produto();
-
-

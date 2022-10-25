@@ -33,6 +33,9 @@ main{
   margin-top: 20px;
   border-radius: 5px;
 }
+.sidebar-header{
+  display: flex;
+}
 .lineInput{
   display: grid;
   margin-bottom: 10px;
@@ -65,9 +68,29 @@ button{
 }
 button:hover{
   background-color: #474a51;
-  ;
 }
-
+.buttonEmp1{
+  border: 0px;
+  padding: 7px;
+  width: 5em;
+  outline: 0;
+  background-color: rgb(73, 73, 73);
+  color: #fff;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.buttonEmp2{
+  border: 0px;
+  padding: 7px;
+  width: 5em;
+  outline: 0;
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  font-weight: bold;
+  opacity: 85%;
+  transition: all ease 0.3s;
+}
 .content{
   margin-top: 15px;
 }
@@ -82,6 +105,9 @@ table th{
 table th, td{
   text-align: left;
   padding: 1px 5px;
+}
+tr:nth-child(even){
+  background-color: #f1f1f1;
 }
 table td img{
   width: 20px;

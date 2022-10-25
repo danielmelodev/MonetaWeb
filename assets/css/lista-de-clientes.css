@@ -4,6 +4,10 @@ ul, li{
     padding: 0;
 }
 
+.sidebar-header{
+    display: flex;
+}
+
 .acoes{
     display: flex;
 }

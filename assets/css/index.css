@@ -13,6 +13,10 @@ ul, li{
     border-radius: 1em;;
 }
 
+.sidebar-header{
+    display: flex;
+}
+
 .dados > li{
     flex: 1 1 280px;
     text-align: center;

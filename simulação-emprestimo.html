@@ -20,7 +20,6 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -54,8 +53,8 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Samuel Sena</h3>
-                <strong>SS</strong>
+                <i class="fas fa-user-circle fa-2x mr-auto ml-auto"></i> 
+                <h3 class="mr-4 ml-0">Samuel S.</h3>
             </div>
 
             <ul class="list-unstyled components">
@@ -190,30 +189,50 @@
 
             <div class="card">
                 <div class="title">
-                    <h2>Simulação de Empréstimo</h2>
+                    <h2>Simulação de Empréstimo</h2> <button class="buttonEmp1" id="buttonEmp1" onclick="">SAC</button> <button class="buttonEmp2" id="buttonEmp2" onclick="swipePrice()">PRICE</button>
                 </div>
-                <div class="lineInput">
-                    <label>Valor do Empréstimos</label>
+                <div class="lineInput" id="lineSAC">
+                    <label>Valor do Bem</label>
                     <input type="number" name="valor" id="valor" placeholder="0,00">
                 </div>
 
-                <div class="lineInput">
-                    <label>Números de parcelas desejadas</label> 
-                    <input type="number" name="nParcelas" id="parcelas" placeholder="0">
+                <div class="lineInput" id="lineSAC">
+                    <label>Valor de Entrada</label> 
+                    <input type="number" name="entrada" id="entrada" placeholder="0,00">
                 </div>
 
-                <div class="lineInput">
+                <div class="lineInput" id="lineSAC">
                     <label>Taxas de Juros</label>
                     <input type="number" name="taxa" id="taxas" placeholder="0,00%">
                 </div>
 
-                <div class="lineInput">
+                <div class="lineInput" id="lineSAC">
+                    <label>Prazo (em meses)</label>
+                    <input type="number" name="prazo" id="prazo" placeholder="0">
+                </div>
+
+                <div class="lineInput" id="linePRICE" hidden>
+                    <label>Valor do Empréstimos</label>
+                    <input type="number" name="valor" id="valor" placeholder="0,00">
+                </div>
+
+                <div class="lineInput" id="linePRICE" hidden>
+                    <label>Números de parcelas desejadas</label> 
+                    <input type="number" name="nParcelas" id="parcelas" placeholder="0">
+                </div>
+
+                <div class="lineInput" id="linePRICE" hidden>
+                    <label>Taxas de Juros</label>
+                    <input type="number" name="taxa" id="taxas" placeholder="0,00%">
+                </div>
+
+                <div class="lineInput" id="linePRICE" hidden>
                     <label>Valor das prestações: <samp id="resultado"></samp></label>
                 </div>
 
                 <div class="botoes">
-                    <button onclick="produto.simular()" id="btn1" class="botao1">Simular</button>
-                    <button onclick="produto.cancelar()">Cancelar</button>
+                    <button id="btn1" class="botao1">Simular</button>
+                    <button id="btn2">Cancelar</button>
                 </div>
                 <br>
                 <a class="center"> As parcelas Fixas (Tabela Price) são muito comuns nos empréstimos pessoais e financiamentos de carros.
@@ -234,22 +253,17 @@
                             <th class="center">Juros</th>
                             <th class="center">Saldo Devedor</th>
                         </thead>
-                        <tbody id="tbody">
-                            <tr class="codigo">
-                                <td class="center">1</td>
-                                <td class="center">122,67</td>
-                                <td class="center">83,67</td>
-                                <td class="center">39,00</td>
-                                <td class="center">916,32</td>
-                            </tr>
-
+                        <tbody id="corpoTabela" class="text-center">
+                        </tbody>
+                        
                   <!--tabela-->
 
-                <script src="./assets/js/simulacoes-emprestimo.js"></script>
             </div>
         </div>
     </div>
-    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/script-emprestimo.js"></script>
+
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->

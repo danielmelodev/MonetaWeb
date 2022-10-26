@@ -189,7 +189,7 @@
 
             <div class="card">
                 <div class="title">
-                    <h2>Simulação de Empréstimo</h2> <button class="buttonEmp1" id="buttonEmp1" onclick="">SAC</button> <button class="buttonEmp2" id="buttonEmp2" onclick="swipePrice()">PRICE</button>
+                    <h2>Simulação de Empréstimo</h2> <button class="buttonEmp1" id="buttonEmp1" class="right">SAC</button> <button class="buttonEmp2" id="buttonEmp2" class="right" onclick="swipePrice()">PRICE</button>
                 </div>
                 <div class="lineInput" id="lineSAC">
                     <label>Valor do Bem</label>
@@ -246,14 +246,14 @@
                     <div class="title">
                     </div>
                     <table border="1">
-                        <thead class="title">
-                            <th class="center">#</th>
+                        <thead id="cabecaTabela" class="title2">
+                            <th class="center" id="th">#</th>
                             <th class="center">Parcelas</th>
                             <th class="center">Amortizaçôes</th>
                             <th class="center">Juros</th>
                             <th class="center">Saldo Devedor</th>
                         </thead>
-                        <tbody id="corpoTabela" class="text-center">
+                        <tbody id="corpoTabela">
                         </tbody>
                         
                   <!--tabela-->

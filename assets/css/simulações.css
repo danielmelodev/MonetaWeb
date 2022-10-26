@@ -71,6 +71,9 @@ button:hover{
 }
 .buttonEmp1{
   border: 0px;
+  position: relative;
+  left: 30vw;
+  width: 200px;
   padding: 7px;
   width: 5em;
   outline: 0;
@@ -81,6 +84,9 @@ button:hover{
 }
 .buttonEmp2{
   border: 0px;
+  position: relative;
+  left: 30vw;
+  width: 200px;
   padding: 7px;
   width: 5em;
   outline: 0;
@@ -103,7 +109,7 @@ table th{
   background-color: #ccc;
 }
 table th, td{
-  text-align: left;
+  text-align: center;
   padding: 1px 5px;
 }
 tr:nth-child(even){

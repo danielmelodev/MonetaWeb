@@ -2,16 +2,19 @@
 const swipePrice = document.querySelector("#buttonEmp2");
 const linePRICE = document.querySelector("#linePRICE");
 const corpoTabela = document.querySelector("#corpoTabela");
+const cabecaTabela = document.querySelector("#cabecaTabela");
 const botaoCalcular = document.querySelector("#btn1");
 const botaoCancelar = document.querySelector("#btn2");
 const textoValor = document.querySelector("#valor");
 const textoEntrada = document.querySelector("#entrada");
 const textoTaxaJuros = document.querySelector("#taxas");
 const textoPrazo = document.querySelector("#prazo");
+const tables = document.querySelector("#table");
+
 
 swipePrice.addEventListener('click', () => {
   if(this.swipePrice) {
-      linePRICE.removeAttribute('hidden');
+      cabecaTabela.removeAttribute('hidden');
   } else {
       linePRICE.setAttribute('hidden','');
   }
@@ -91,11 +94,11 @@ class Financiamento {
     }
 
     apagarParcelas() {
-        const parcelas = this.#parcelas.slice(1);
+        const parcelas = this.#parcelas.splice(1,0);
         for(const parcela of parcelas) {
-            const linha = corpoTabela.remove();
+            const linha = corpoTabela.deleteRow(1,0);
             for (const dado of parcela.getDadosFormatados()){
-                const celula = linha.insertCell(-1);
+                const celula = linha.deleteCell(1,0);
                 celula.textContent = dado;
             }
         }
@@ -106,7 +109,14 @@ botaoCalcular.addEventListener('click', function() {
     const valor = parseFloat(textoValor.value);
     const entrada = parseFloat(textoEntrada.value);
     const taxaJuros = parseFloat(textoTaxaJuros.value);
-    const prazo = parseFloat(textoValor.value);
+    const prazo = parseFloat(textoPrazo.value);
+
+    /*if(this.botaoCalcular) {
+        cabecaTabela.removeAttribute('hidden');
+    } else {
+        cabecaTabela.setAttribute('hidden','');
+    }*/
+
     let simulacao;
     simulacao = new Financiamento(valor,entrada,taxaJuros,prazo);
     simulacao.calcParcelasMensais();
@@ -114,11 +124,6 @@ botaoCalcular.addEventListener('click', function() {
 });
 
 botaoCancelar.addEventListener('click', function() {
-    const valor = parseFloat(textoValor.value);
-    const entrada = parseFloat(textoEntrada.value);
-    const taxaJuros = parseFloat(textoTaxaJuros.value);
-    const prazo = parseFloat(textoValor.value);
-    let simulacao;
-    simulacao = new Financiamento(valor,entrada,taxaJuros,prazo);
-    simulacao.apagarParcelas();
+    corpoTabela.remove();
+    cabecaTabela.remove();
 });

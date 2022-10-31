@@ -82,7 +82,7 @@ button:hover{
   border-radius: 15px;
   font-weight: bold;
 }
-.buttonEmp2{
+.buttonEmp{
   border: 0px;
   position: relative;
   left: 30vw;
@@ -94,6 +94,11 @@ button:hover{
   color: #fff;
   border-radius: 15px;
   font-weight: bold;
+  opacity: 85%;
+  transition: all ease 0.3s;
+}
+.buttonEmp2:active{
+  background-color: #474a51;
   opacity: 85%;
   transition: all ease 0.3s;
 }

@@ -26,6 +26,9 @@ body{
   .title{
     text-align: center;
   }
+  .sidebar-header{
+    display: flex;
+  }
   .card{
     background-color: #fff;
     border: 1px solid #ccc;

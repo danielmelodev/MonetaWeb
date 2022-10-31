@@ -4,6 +4,9 @@ ul, li{
     margin: 0;
     padding: 0;
 }
+.sidebar-header{
+    display: flex;
+}
 .simulacoes{
     text-align: center;
     background-color: #ececec;
@@ -81,6 +84,48 @@ ul, li{
 }
 @media (max-width: 650px){
     .flex li div{
+        height: 180px;
+    }
+}
+
+.financiamento{
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.financiamento > li{
+    flex: 1 1 180px;
+}
+.financiamento li h3{
+    margin-top: 5px;
+    font-size: 1em;
+    color: #fff;
+}
+.financiamento li p{
+    font-size: 0.85em;
+}
+.financiamento li{
+    margin: 20px 5px;
+   text-align: center;
+}
+.financiamento li div{
+    height: 250px;
+    border-radius: 20px;
+    background-color: #030303;
+    padding: 8px 4px;
+}
+.simulacoes span{
+    font-weight: bold;
+}
+
+@media (max-width: 1095px){
+    .financiamento li div{
+        height: 210px;
+    }
+}
+@media (max-width: 650px){
+    .financiamento li div{
         height: 180px;
     }
 }

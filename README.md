@@ -22,7 +22,7 @@
  ## Instalação do sistema
 ```
 Em seu computador, abra um terminal e digite: 
-git clone https://github.com/WendelF03/MonetaWeb.git
+git clone https://github.com/danielmelodev/MonetaWeb.git
 Acesse a pasta criada após o comando
 Abra o arquivo index.html
  

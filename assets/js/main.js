@@ -1,5 +1,5 @@
-const url = "http://localhost:2022/emprestimo";
-const url2 = "http://localhost:2022/financiamento";
+const url = "https://api-monetaweb.herokuapp.com/emprestimo";
+const url2 = "https://api-monetaweb.herokuapp.com/financiamento";
 
 function getEmprestimoApi() {
   fetch(url)

@@ -23,8 +23,8 @@
 
  ## Instalação do sistema
 
-Em seu computador, abra um terminal e digite: 
-git clone https://github.com/danielmelodev/MonetaWeb.git
-Acesse a pasta criada após o comando
-Abra o arquivo index.html
+<p>Em seu computador, abra um terminal e digite: </p>
+<p>git clone https://github.com/danielmelodev/MonetaWeb.git</p>
+<p>Acesse a pasta criada após o comando</p>
+<p>Abra o arquivo index.html</p>
  

@@ -14,6 +14,8 @@
   <li> [Bootstrap] (https://getbootstrap.com) </li>
  <li> [HTML] (https://developer.mozilla.org/pt-BR/docs/Web/HTML) </li>
  <li> [CSS] (https://developer.mozilla.org/pt-BR/docs/Web/CSS) </li>
+ <li> [Express] ([https://developer.mozilla.org/pt-BR/docs/Web/CSS](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs)) </li>
+ <li> [NodeJs] (https://nodejs.org/en/) </li>
  </ul>
 
 

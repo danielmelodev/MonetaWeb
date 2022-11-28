@@ -163,7 +163,7 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-btn">
+            <nav class="navbar navbar-expand-lg navbar-btn bg-transparent">
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
@@ -189,7 +189,7 @@
 
             <div class="card">
                 <div class="title">
-                    <h2>Simulação de Empréstimo</h2> <button class="buttonEmp1" id="buttonEmp1" class="right">SAC</button>  <!--<button class="buttonEmp2" id="buttonEmp2" class="right" onclick="swipePrice()">PRICE</button> -->
+                    <h2>Simulação de Empréstimo</h2> <button class="buttonEmp1" id="buttonEmp1" class="right">SAC</button> 
                 </div>
                 <div class="lineInput" id="lineSAC">
                     <label>Valor do Bem</label>
@@ -211,33 +211,13 @@
                     <input type="number" name="prazo" id="prazo" placeholder="0">
                 </div>
 
-                <div class="lineInput" id="linePRICE" hidden>
-                    <label>Valor do Empréstimos</label>
-                    <input type="number" name="valor" id="valor" placeholder="0,00">
-                </div>
-
-                <div class="lineInput" id="linePRICE" hidden>
-                    <label>Números de parcelas desejadas</label> 
-                    <input type="number" name="nParcelas" id="parcelas" placeholder="0">
-                </div>
-
-                <div class="lineInput" id="linePRICE" hidden>
-                    <label>Taxas de Juros</label>
-                    <input type="number" name="taxa" id="taxas" placeholder="0,00%">
-                </div>
-
-                <div class="lineInput" id="linePRICE" hidden>
-                    <label>Valor das prestações: <samp id="resultado"></samp></label>
-                </div>
-
                 <div class="botoes">
                     <button id="btn1" class="botao1">Simular</button>
                     <button id="btn2">Cancelar</button>
                 </div>
                 <br>
-                <a class="center"> As parcelas Fixas (Tabela Price) são muito comuns nos empréstimos pessoais e financiamentos de carros.
-                </a>
-                <a class="center">Já as parcelas Decrescentes (Tabela SAC) são mais usadas em financiamentos de imóveis.</a>
+                <a class="center"> Para ajudar você a tomar decisão para o seu orçamento, trouxemos para você nosso sistema de simulações</a>
+                <a class="center">segundo a tabela SAC, sistema de amortização de dívidas em empréstimos e financiamentos.</a>
                 <br>    
 
                 <!--tabela-->
@@ -254,9 +234,7 @@
                             <th class="center">Saldo Devedor</th>
                         </thead>
                         <tbody id="corpoTabela">
-                            <th>
-                                
-                            </th>
+                            <tr id="linhaTabela"></tr>
                         </tbody>
                         
                   <!--tabela-->

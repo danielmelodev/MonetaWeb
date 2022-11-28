@@ -1,7 +1,5 @@
-
-const swipePrice = document.querySelector("#buttonEmp2");
-const linePRICE = document.querySelector("#linePRICE");
 const corpoTabela = document.querySelector("#corpoTabela");
+const linhaTabela = document.querySelector("#linhaTabela")
 const cabecaTabela = document.querySelector("#cabecaTabela");
 const botaoCalcular = document.querySelector("#btn1");
 const botaoCancelar = document.querySelector("#btn2");
@@ -10,16 +8,6 @@ const textoEntrada = document.querySelector("#entrada");
 const textoTaxaJuros = document.querySelector("#taxas");
 const textoPrazo = document.querySelector("#prazo");
 const tables = document.querySelector("#table");
-
-
-swipePrice.addEventListener('click', () => {
-  if(this.swipePrice) {
-      cabecaTabela.removeAttribute('hidden');
-  } else {
-      linePRICE.setAttribute('hidden','');
-  }
-});
-
 
 /* Parcelas */
 
@@ -98,7 +86,7 @@ class Financiamento {
         for(const parcela of parcelas) {
             const linha = corpoTabela.deleteRow(1,0);
             for (const dado of parcela.getDadosFormatados()){
-                const celula = linha.deleteCell(1,0);
+                const celula = linha.remove();
                 celula.textContent = dado;
             }
         }
@@ -110,13 +98,6 @@ botaoCalcular.addEventListener('click', function() {
     const entrada = parseFloat(textoEntrada.value);
     const taxaJuros = parseFloat(textoTaxaJuros.value);
     const prazo = parseFloat(textoPrazo.value);
-
-    /*if(this.botaoCalcular) {
-        cabecaTabela.removeAttribute('hidden');
-    } else {
-        cabecaTabela.setAttribute('hidden','');
-    }*/
-
     let simulacao;
     simulacao = new Financiamento(valor,entrada,taxaJuros,prazo);
     simulacao.calcParcelasMensais();
@@ -125,5 +106,4 @@ botaoCalcular.addEventListener('click', function() {
 
 botaoCancelar.addEventListener('click', function() {
     corpoTabela.remove();
-    cabecaTabela.remove();
 });

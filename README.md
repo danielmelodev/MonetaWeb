@@ -1,6 +1,6 @@
 
 <h1 align="center"> <img src="https://cdn.glitch.global/fca4e607-26fe-47f6-b1c2-2790b4eb7e8f/Design%20sem%20nome.png?v=1653860156909" width="650px"/>  </h1>
- <p>  Esse projeto foi realizado para a segunda fase da residência do Embarque Digital - Rise Up (2022.1).</p>	 
+ <p>  Esse projeto foi realizado para a segunda fase da residência do Embarque Digital - Grow Up (2022.1).</p>	 
 
 
  <h2> O desafio: </h2>	
